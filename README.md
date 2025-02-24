@@ -1,7 +1,9 @@
 # Sharecipe - Your Go-To Recipe App!
 
 ## Overview
-Love cooking? Looking for new recipes or want to share your own creations? **Sharecipe** is here to make your culinary journey easier and more fun! Whether you're craving a fresh salad, a hearty main course, a refreshing drink, or a sweet treat, Sharecipe has something for you. Find inspiration, search for recipes, and upload your own—all in one place!
+![logo](screenshots/logo.png) 
+
+**Love cooking? Looking for new recipes or want to share your own creations?** **Sharecipe** is here to make your culinary journey easier and more fun! Whether you're craving a fresh salad, a hearty main course, a refreshing drink, or a sweet treat, Sharecipe has something for you. Find inspiration, search for recipes, and upload your own—all in one place!
 
 ## Features
 - **Smart Search:** Quickly find recipes based on ingredients or keywords.
