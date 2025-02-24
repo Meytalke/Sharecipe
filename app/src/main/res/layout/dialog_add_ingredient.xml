@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Spinner
+        android:id="@+id/spinnerIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:spinnerMode="dropdown" />
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter quantity"
+        android:inputType="numberDecimal" />
+    <Spinner
+    android:id="@+id/spinnerMeasurement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:padding="8dp"
+    android:spinnerMode="dropdown" />
+    <Button
+    android:id="@+id/btnAddFromList"
+    android:text="Add from List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:minHeight="48dp"
+    android:padding="8dp"
+    android:background="@drawable/button_background" />
+    <Button
+    android:id="@+id/btnAddCustomIngredient"
+    android:text="Add New Ingredient (no in list)"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:minHeight="48dp"
+    android:padding="8dp"
+    android:background="@drawable/button_background"/>
+</LinearLayout>

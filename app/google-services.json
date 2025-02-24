@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "691200099975",
+    "project_id": "sharecipe-23d50",
+    "storage_bucket": "sharecipe-23d50.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691200099975:android:a3e7e740b2a864364b9a22",
+        "android_client_info": {
+          "package_name": "com.example.sharecipe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4vGz2oqWj-AWc3bPFzwJ11gncdLT6I0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

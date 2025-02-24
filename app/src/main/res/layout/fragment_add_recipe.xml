@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/light_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a New Recipe"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:hint="Recipe Name"
+            android:inputType="text"
+            android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/etRecipeArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"  android:padding="8dp"
+            android:hint="Origin/Area"
+            android:inputType="text"
+            android:background="@drawable/edit_text_background"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"  android:padding="8dp"
+            android:spinnerMode="dropdown" />
+
+        <ImageButton
+            android:id="@+id/ibRecipeImage"
+            android:layout_width="48dp"  android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_camera"
+            android:contentDescription="Recipe Image" />
+
+        <Button
+            android:id="@+id/btnAddIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Add Ingredient"
+            android:background="@drawable/button_background"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:minHeight="48dp"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/etInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:hint="Instructions"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:gravity="top|start"
+            android:background="@drawable/edit_text_background"/>
+
+        <Button
+            android:id="@+id/btnSaveRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:text="Save Recipe"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+
+</ScrollView>

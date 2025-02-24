@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.sharecipe.fragments.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+        <action
+            android:id="@+id/action_login_to_registration"
+            app:destination="@id/registration" />
+
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.sharecipe.fragments.registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.sharecipe.fragments.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_addRecipe"
+            app:destination="@id/addRecipe" />
+        <action
+            android:id="@+id/action_home_to_recipeDetails"
+            app:destination="@id/recipeDetails" />
+        <action
+            android:id="@+id/action_home_to_searchInInternet"
+            app:destination="@id/searchInInternet" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecipe"
+        android:name="com.example.sharecipe.fragments.addRecipe"
+        android:label="addRecipe" >
+        <action
+            android:id="@+id/action_addRecipe_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetails"
+        android:name="com.example.sharecipe.fragments.recipeDetails"
+        android:label="recipeDetails" >
+        <action
+            android:id="@+id/action_recipeDetails_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_recipeDetails_to_searchInInternet"
+            app:destination="@id/searchInInternet" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchInInternet"
+        android:name="com.example.sharecipe.fragments.searchInInternet"
+        android:label="searchInInternet" >
+        <action
+            android:id="@+id/action_searchInInternet_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_searchInInternet_to_recipeDetails"
+            app:destination="@id/recipeDetails" />
+    </fragment>
+</navigation>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etNewIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter New Ingredient"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etQuantityNewIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter quantity"
+        android:inputType="numberDecimal" />
+    <Spinner
+        android:id="@+id/spinnerCustomMeasurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:spinnerMode="dropdown" />
+</LinearLayout>
